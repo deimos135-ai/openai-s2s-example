@@ -8,5 +8,5 @@ const port = process.env.WS_PORT || 3000;
 require('./lib/routes')({logger, makeService});
 
 server.listen(port, () => {
-  logger.info(`jambonz websocket server listening at http://localhost:${port}`);
+  logger.info(`jambonz websocket server listening at http://0.0.0.0:${port}`);
 });
